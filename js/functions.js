@@ -39,10 +39,10 @@ let exerciseOneArr = [1, 2, 3, 5, 6, 7, 10, 12]
 // need a for loop; for num, check if prev_num == num -1;
 // start at index 1, not index 0
 
-function break_nums(exerciseOneArr){
-for (let i in exerciseOneArr){
-    if (exerciseOneArr[i] - exerciseOneArr[i-1] > 1){
-        return i;
+function break_nums(farquad){
+    for (let i in farquad){
+        if (farquad[i] - farquad[i-1] > 1){
+            return i;
         };
     };
 };
@@ -54,9 +54,9 @@ console.log(break_nums(exerciseOneArr));
 // Function Variable Declaration
 // (var, let, or const) nameOfVariable = function(){ code to call when executed }
 
-var addSomeNums = function(){
+let addSomeNums = function(){
     let num1 = 100;
-    let num2 = 200;
+    let num2 = 201;
     return num1 + num2;
 };
 console.log(addSomeNums())
@@ -93,7 +93,7 @@ console.log(addNumsArrow2(20, 30));
 
 // IF there is ONE and ONLY ONE param, () are not necessary
 
-let addNumsArrow3 = num1 => num1;
+let addNumsArrow3 = num1 => num1 + 12;
 console.log(addNumsArrow3(20));
 
 

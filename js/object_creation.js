@@ -45,7 +45,7 @@ console.log(person3.sayHello);
 // you can put fns inside objects and then call the functions as follows
 person3.sayHello();
 
-console.clear()
+// console.clear()
 
 
 
@@ -76,8 +76,9 @@ console.clear()
 // console.log(animal);
 
 
-
+//////////////////////////////////////////////
 // Function Instantiation ////////////////////
+//////////////////////////////////////////////
 
 // function Animal(name, energy=10){
 //     let animal = {}; // creating an empty object (dict)
@@ -111,8 +112,9 @@ console.clear()
 // console.log(buddy);
 // console.log(leo);
 
-
+//////////////////////////////////////////////
 // Function Instantiation with Shared Methods ////////////////////
+//////////////////////////////////////////////
 
 // const animalMethods = {
 //     eat: function(amount){ 
@@ -188,8 +190,9 @@ console.clear()
 // childObj.name = 'William';
 
 
-
+//////////////////////////////////////////////
 // Function Instantiation with Shared Methods ////////////////////
+//////////////////////////////////////////////
 
 // const animalMethods = {
 //     eat: function(amount){ 
@@ -236,8 +239,9 @@ console.log(doNothing.prototype); // this is an object, just has constructor in 
 console.log(typeof doNothing.prototype); // 
 
 
-
+//////////////////////////////////////////////
 // Prototypal Instantiation ///////////////////////////////
+//////////////////////////////////////////////
 
 // YOU CAN GET RID OF CONST ANIMALMETHODS AND JUST DO PROTOTYPE FROM MAIN FUNCTION
 
@@ -292,8 +296,9 @@ console.log(typeof doNothing.prototype); //
 // console.log(buddy);
 // console.log(leo);
 
-
+//////////////////////////////////////////////
 // Pseudoclassical Instantiation //////////////////
+//////////////////////////////////////////////
 
 // function Animal(name, energy=10){
 //     // let animal = Object.create(Animal.prototype); // this creates an object with the animalMethods as a parent (inherited by this, the child)
@@ -331,8 +336,9 @@ console.log(typeof doNothing.prototype); //
 // console.log(leo);
 
 
-
+//////////////////////////////////////////////
 // ECMAScript 2015 - class keyword ////////////////////
+//////////////////////////////////////////////
 
 class Animal{ // remove function ()...
     constructor(name, energy=10){

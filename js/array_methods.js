@@ -27,9 +27,9 @@ console.log('--------------');
 
 
 
-// callback function
-function callBack(name, index, arr){
-    console.log(name, index, arr)
+// callback function - takes in the value, its index, its entire array in that order (fn's name doesnt matter)
+function callBack(index, name, arr){
+    console.log(index, name, arr) // changed the order here, and still prints name, index, array in order
 }
 
 names.forEach(callBack);
@@ -109,10 +109,10 @@ let fruits = ['orange', 'apple', 'banana', 'banana']
 
 console.log(fruits.includes('apple'))
 console.log(fruits.includes('mango'))
-console.log(1 in fruits) // this just returns
+console.log(1 in fruits) // this just returns if there is an index...as 'in' grabs the index if an array
 
 
-// array.prototype.indexOf(element) - just returns the element of 1st index that matches
+// array.prototype.indexOf(element) - just returns the element of 1st index that matches, -1 otherwise
 console.log(fruits.indexOf('banana'))
 console.log(fruits.indexOf('watermelon'))
 
