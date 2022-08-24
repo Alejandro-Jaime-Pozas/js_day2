@@ -28,8 +28,8 @@ console.log('--------------');
 
 
 // callback function - takes in the value, its index, its entire array in that order (fn's name doesnt matter)
-function callBack(index, name, arr){
-    console.log(index, name, arr) // changed the order here, and still prints name, index, array in order
+function callBack(name, index, arr){
+    console.log(name, index, arr) // changed the order here, and still prints name, index, array in order
 }
 
 names.forEach(callBack);

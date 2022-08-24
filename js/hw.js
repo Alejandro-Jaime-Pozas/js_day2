@@ -59,3 +59,11 @@ console.log(user1.password);
     Ex 3. squareNegatives([2, 4, 6, 8, 10]) // []
 */
 
+function squareNegatives(arr){
+    // let negatives = arr.filter(element => element < 0);
+    // return negatives.map(element => element ** 2);
+    return arr.filter(element => element < 0).map(element => element ** 2);
+};
+
+
+console.log(squareNegatives([-10, -3, 4, -2, 8, 9, -3]));
