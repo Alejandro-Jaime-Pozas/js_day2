@@ -19,7 +19,6 @@ console.log(addNums());
 
 
 
-
 // Regularly Named Fn w Parameters
 // function <funcName>(param1, param2, etc){ code to execute }
 
@@ -51,6 +50,7 @@ console.log(break_nums(exerciseOneArr));
 
 
 
+
 // Function Variable Declaration
 // (var, let, or const) nameOfVariable = function(){ code to call when executed }
 
@@ -66,7 +66,6 @@ var addSomeNums2 = function(num1, num2){
     return num1 + num2;
 };
 console.log(addSomeNums2(100, 301))
-
 
 
 
@@ -125,3 +124,41 @@ let posSum = numbers1 => {
     return total;
 };
 console.log(posSum([10, 12, -9, 3, -1, 0, 20]))
+
+
+console.log('---------------------------------------')
+
+
+// function find_average(array) {
+//     let total = 0;
+//     for (num of array) {
+//         total += num
+//     }
+//     return total / array.length;
+//   }
+
+// const reverseSeq = n => {
+//     let arr = [];
+//     while (n > 0) {
+//         arr.push(n)
+//         n -= 1;
+//         console.log(n)
+//     }
+//     return arr
+//   };
+
+// function stringToArray(arr){
+//     // let arr = string.split(" ");
+//     return function stringToArray(arr){
+//     // let arr = string.split(" ");
+//     return arr.join(' ')
+// }
+// }
+
+var countSheep = function (num){
+    let x = []
+    for 
+    `${num} sheep...`
+  }
+
+console.log(countSheep(2))

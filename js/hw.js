@@ -12,8 +12,8 @@ function toCelcius(someNum){
     return 5 / 9 * (someNum - 32);
 };
 
-console.log(toCelcius(212));
 console.log(toCelcius(32));
+console.log(toCelcius(212));
 console.log(toCelcius(50));
 
 
@@ -24,7 +24,7 @@ console.log(toCelcius(50));
     Create an instance of the new user and then change their password using the method.
 */
 
-class user{
+class User{
     constructor(username, password){
         this.username = username;
         this.password = password;
@@ -41,7 +41,7 @@ class user{
 };
 
 
-let user1 = new user("Johnny", "abc123");
+let user1 = new User("Johnny", "abc123");
 console.log(user1.username);
 console.log(user1.password);
 user1.changePswd("blah", "xyz456");

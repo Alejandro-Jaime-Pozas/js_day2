@@ -143,7 +143,7 @@ console.log(fruits);
 console.log(fruits.slice()); // equal to fruits[:] in python, makes a list copy
 console.log(fruits.slice(2)); // equal to fruits[2:] in python
 console.log(fruits.slice(2, 4)); // equal to fruits[2:4] in python
-console.log(fruits.slice(0, -1)); // equal to fruits[2:4] in python
+console.log(fruits.slice(0, -1)); // equal to fruits[0:-1] in python
 
 
 // array.prototype.splice(start, deleteCount, item1, item2, etc) - deletes indicated indexes, and inserts new items in their place
