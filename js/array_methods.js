@@ -6,7 +6,7 @@ ARRAY METHODS
 
 // create an aarray w which we will work
 
-let names = ['Mike', 'Frank', 'Pete'];
+let names = ['mike', 'frank', 'pete'];
 
 // basic looping
 for (let i = 0; i < names.length; i++){
@@ -37,7 +37,7 @@ names.forEach(callBack);
 console.log('--------------');
 
 // this does not change the original array, just makes them uppercase
-names.forEach(name => console.log(name.toUpperCase()))
+names.forEach(name => console.log(name[0].toUpperCase() + name[1]))
 
 names.forEach((name, index) => console.log(name , index))
 
@@ -109,10 +109,10 @@ let fruits = ['orange', 'apple', 'banana', 'banana']
 
 console.log(fruits.includes('apple'))
 console.log(fruits.includes('mango'))
-console.log(1 in fruits) // this just returns if there is an index...as 'in' grabs the index if an array
+console.log(1 in fruits) // this just returns if there is an index...as 'in' grabs the index of an array
 
 
-// array.prototype.indexOf(element) - just returns the element of 1st index that matches, -1 otherwise
+// array.prototype.indexOf(element) - just returns the index of 1st element that matches, -1 otherwise
 console.log(fruits.indexOf('banana'))
 console.log(fruits.indexOf('watermelon'))
 
@@ -121,7 +121,7 @@ console.log(fruits.indexOf('watermelon'))
 // array.prototype.join(str-character) - 
 
 let myArrName = ['B', 'R', 'I', 'A', 'N']
-console.log(myArrName.join('-'))
+console.log(myArrName.join(''))
 
 
 
@@ -184,5 +184,7 @@ console.log(newUnsorted);
 let anotherUnsorted = [34, 7, 2, 12, 54, 12344, 98]
 
 console.log(anotherUnsorted)
-anotherUnsorted.sort((a, b) => a - b)
+anotherUnsorted.sort((a, b) => a - b) // normal
+console.log(anotherUnsorted)
+anotherUnsorted.sort((a, b) => b - a) // reverse
 console.log(anotherUnsorted)
